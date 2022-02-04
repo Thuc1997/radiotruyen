@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif ;
+}
+html{
+    font-size: 62.5%;
+}
+.main{
+    max-width: 100%;
+    font-size: 1.4rem;
+}
+.main_one{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#slider img{
+    width: 100%;
+}
+.play{
+display: flex;
+margin-top: 20px;
+justify-content: space-between;
+}
+.main_left{
+flex: 1;
+height: 493px;
+margin-right: 15px;
+}
+.main_left img{
+width: 100%;
+height:100%;
+}
+.main_right{
+flex:2;
+margin-left: 15px;
+}
+.main_right h1{
+    text-transform:uppercase;
+    font-size: 2.4rem;
+    color:#4a4a4a;
+}
+.play_list{
+    margin-top: 15px;
+    border: 2px solid #633d24;
+    background-color:#986645;
+}
+.bottom_list{
+    background-color: #633d24;
+    max-height:200px;
+    overflow: auto;
+}
+.bottom_list ul li{
+    list-style-type: none;
+    border-bottom: 1px solid #8e5733;
+    line-height: 30px;
+}
+.bottom_list ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    text-transform: capitalize;
+    padding: 0 15px;
+    color: white;
+}
+.top_play{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.progress-area{
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+.progress-area .progress-bar{
+height: inherit;
+border-radius: inherit;
+width: 0%;
+background: linear-gradient(90deg, #ff74a4 0%, #9f6ea3 100%);
+position: relative;
+}
+.progress-bar::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: 50%;
+    right: -5px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: inherit;
+    transition: opacity 0.2s ease;
+}
+.progress-area:hover .progress-bar::before{
+    opacity: 1;
+}
+.song-timer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.controls{
+    display: flex;
+    justify-content:center;
+    margin: 7px 0px;
+}
+.controls i{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}     
+#prev{
+    color: white;
+    margin-right: 25px;
+}
+#next{
+    color: white;
+    margin-left: 25px;
+}
+.play-pause{
+height: 50px;
+width: 50px;
+background: linear-gradient(rgb(230, 197, 197) 0%, rgb(224, 194, 194) 100%);
+box-shadow: 0px 0px 5px pink;   
+border-radius: 50%;
+display:flex;
+justify-content: center;
+align-items: center;
+
+}
+.play-pause::before{
+content: "";
+position:absolute;
+height: 43px;
+width: 43px;
+border-radius: inherit;
+background: linear-gradient(rgb(221, 12, 186) 0%, rgb(19, 207, 60) 100%);
+
+}
+.play-pause i{
+background: inherit;
+font-size: 30px;
+color: white;
+border-radius:inherit;
+text-align: center;
+transform:translate(0px,-9px);
+-webkit-background-clip: text;
+}
+
+.tua{
+    display: flex;
+    margin-top: 10px;
+}
+input[type="button"]{
+    background-color: #986645;
+    border: 1px dotted #fff;
+    padding: 6px 5px;
+    color: white;
+
+}
+.tua_right{
+    margin-left: 15px;
+}
+input[type="button"]:nth-child(6){
+background-color: #ca4d4d;
+}
+.hengio{
+display: flex;
+align-items: center;
+margin-top: 10px;
+
+}
+.hengio img{
+    width: 40px;
+}
+.hengio button{
+    padding:11px 10px;
+    text-transform: capitalize;
+    border: none;
+    border-radius:3px;
+    color: white;
+}
+#hengio{
+    margin-left: 5px;
+    background-color: #007bff;
+}
+#tathen{
+    margin-left:5px;
+    background-color: #ca4d4d;
+}
+.useronline{
+    margin-top: 25px;
+    display: flex;
+
+}
+.useronline>p:nth-child(1){
+    background: url('https://radiotruyen.info/public/resource/img/useronline.gif');
+    background-repeat: no-repeat;
+    padding-left: 23px;
+    text-align: left;
+    padding-top: 3px;
+}
+.useronline>p:nth-child(2){
+    margin-left: 20px;
+}
+.tacgiaa{
+    margin-top: 20px;
+}
+.tacgiaa p{
+    line-height: 25px;
+
+}
+.tacgiaa label{
+    font-weight: bold;
+}
+.tacgiaa>p>a{
+    color: #1e7ab8;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.description{
+    margin-top: 20px;
+    border: 1px solid #eeeeee;
+    padding: 23px 48px;
+    border-top: 2px solid #ca4d4d;
+}
+.description span{
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    color:#4a4a4a;
+}
+#end_btn{
+    margin-top: 6px;
+}
+.listen_color{
+    color: red;
+    font-weight: bold;
+}
+.listen_top{
+    font-weight: bold;
+}
+
+/* phân trang danh mục */
+.page ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.page_link{
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #e4e4e4;
+    color: #444444;
+    font-size: 1.3rem;
+    margin-left: -1px;
+    background-color: #fff;
+}
+
+.trangg{
+    background-color: skyblue;
+    transform: translateY(-9px);
+}
+
+/* reponsive mobile */
+@media(max-width:740px){
+    .play{
+        display: block;
+        }
+     .main_left{
+         margin-right: 0px;
+     }
+     .main_right{
+         margin-left: 0;
+         margin-top: 30px;
+     }
+     .description{
+        padding: 15px 15px;
+     }
+     .tua_right{
+         flex: 1;
+         text-align: end;
+     }
+
+input,textarea,
+button,select,a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+}

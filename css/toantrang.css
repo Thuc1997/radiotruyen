@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+  font-family: 'Questrial', sans-serif ;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth; 
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+
+:root{
+    --text-color:#ff8800;  
+    }
+
+.clear{
+clear:both;
+}
+
+/* File chứa toàn bộ trang web */
+.app{
+width: 100%;
+}
+
+/* Phần đầu trang của trang web */
+
+#header{
+width: 100%;
+height: 90px;
+box-shadow: 0 2px 6px rgb(0 0 0 / 5%);
+}
+
+.header_list{
+max-width: 85%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+line-height: 90px;
+}
+
+.logo{
+width: 35%;
+height: 75px;
+
+}
+
+
+.logo_list img{
+width:100%;
+height:100%;
+padding: 7px 0;
+
+}
+
+.menu{
+display: flex;
+position: relative;
+z-index: 2;
+}
+
+.menu >ul{
+list-style-type: none;
+display: flex;
+}
+
+.menu > ul >li{
+position: relative;
+
+}
+
+
+.menu > ul >li:hover ul:nth-child(2){
+display: block;
+}
+
+
+
+
+.search{
+font-size: 1.4rem;
+color: #565656;
+display: block;
+
+
+}
+
+.menu > ul >li >a{
+text-decoration: none;
+font-size: 1.4rem;
+color: #565656;
+padding: 0 20px;
+display: block;
+text-transform: capitalize;
+}
+
+.menu > ul >li >a:hover{
+
+    color: rgba(255, 0, 0, 0.596);
+}
+
+.menu > ul ul{
+    position: absolute;
+min-width:200px;
+background-color: white;
+display: none;
+box-shadow: 0 20px 45px rgb(0 0 0 / 13%);
+border-radius: 3px;
+}
+
+
+
+.menu > ul ul::before{
+content: "";
+width: 100%;
+height: 3px;
+background-color: #CA4D4D;
+position: absolute;
+
+}
+
+
+.menu > ul ul>li{
+list-style-type: none;
+line-height: 36px;
+
+}
+
+.menu > ul ul>li>a{
+ text-decoration: none;
+ font-size: 1.3rem;
+ color: black;
+ border-bottom: 1px solid rgb(247, 247, 247);
+display: block;
+padding: 0 20px;
+text-transform: capitalize;
+}
+
+.menu > ul ul>li>a:hover{
+color: rgba(255, 0, 0, 0.596);
+background-color: rgba(204, 204, 204, 0.3);
+
+}
+
+
+.size_dow{
+font-size: 10px;
+margin-left: 5px;
+color: #565656;
+}
+
+
+/* phần main css */
+
+
+.max-wapp{
+    max-width: 85%;
+    margin: 0 auto;
+
+}
+
+#slider{
+
+width: 100%;
+height:300px;
+overflow: hidden;
+margin-top: 20px;
+
+}
+
+
+#sizebar{
+width: 100%;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.athour_item{
+width: calc(16.6666% - 24px);
+height: 237px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+cursor: pointer;
+text-decoration: none !important;
+margin-top: 20px;
+}
+
+.athour_item img{
+width: 100%;
+min-height: 167px;
+
+
+}
+
+.athour_text{
+    display: block;
+font-size: 1.5rem;
+text-transform: uppercase;
+color: #4a4a4a;
+font-weight: bold;
+padding: 0 15px;
+text-align:center;
+padding-top: 10px;
+line-height: 20px;
+}
+
+/* container trang web */
+#container{
+    margin-top: 45px;
+width: 100%;
+height: 50px;
+line-height: 30px;
+}
+
+.container_title{
+font-size: 1.9rem;
+font-weight: 400;
+text-transform: uppercase;
+
+}
+
+.container_item{
+font-size: 1.4rem;
+color: #660000;
+text-transform: capitalize;
+
+}
+
+.icon_link{
+font-size: 1.6rem;
+margin-right: 6px;
+color: rgba(255, 0, 0, 0.6);
+
+}
+
+
+/* main container trang web */
+
+.main_container{
+margin-top: 25px;
+
+}
+
+.newupdate{
+    width: 100%;
+
+}
+
+.newupdate_title{
+line-height: 25px;
+height: 25px;
+border-bottom: 2px solid #ff8800;
+border-left: 2px solid #ff8800;
+}
+
+.newupdate_title-left{
+    color: black;
+text-transform: uppercase;
+font-size: 1.8rem;
+text-decoration: none;
+font-weight: 500;
+}
+
+.newupdate_title-left:hover{
+    color:#660000 ;
+}
+
+.newupdate_title-right{
+    text-decoration: none;
+    text-transform: uppercase;
+float: right;
+color: #ff8800;
+font-size: 1.4rem;
+}
+
+
+
+.newupdate-icon{
+margin-right: 6px;
+margin-left: 7px;
+color:var(--text-color);
+}
+
+.newupdate_images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.newupdate_main{
+    width: calc(25% - 24px);
+    margin: 10px 0;
+   min-height: 490px;
+   line-height: 23px;
+   box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+   cursor: pointer;
+   text-decoration: none;
+}
+  
+
+.newupdate_time{
+    padding: 0 15px;
+}
+
+.newupdate_main img{
+width: 100%;
+max-height: 357px;
+
+}
+
+.newupdate_main h4{
+text-transform:capitalize;
+font-size: 1.5rem;
+font-weight: bold;
+color: #4a4a4a;
+white-space: pre-wrap; 
+overflow: hidden; 
+text-overflow: ellipsis; 
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+ display: -webkit-box;
+ text-transform:capitalize;
+
+}
+
+.newupdate_main p{
+    color: rgba(255, 0, 0, 0.747);
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight:bold;
+
+}
+
+.newupdate_main span{
+font-size: 1.4rem;
+color: #777;
+}
+
+
+
+
+.newupdate-icon1{
+    margin-right: 5px;
+}
+
+
+/* love_story */
+
+.love_story{
+margin-top: 25px;
+
+}
+
+.button_more-book{
+text-align: center;
+background-color: #EC331F;
+max-width: 70%;
+margin: 0 auto;
+}
+
+.button_more-book:hover{
+
+    background-color:#FF9900;
+}
+
+.button_more-book1{
+margin-top: 10px;
+text-decoration: none;
+font-size: 1.4rem;
+display: block;
+padding: 8px 10px;
+text-transform: uppercase;
+box-sizing: border-box;
+font-weight: 500;
+color: white;
+
+}
+
+
+.ghost_story{
+margin-top: 25px;
+
+}
+
+.comic_swordplay{
+    margin-top: 25px;
+
+}
+
+#footer{
+    margin-top: 80px;
+width: 100%;
+height: 50px;
+background-color: turquoise;
+text-align: center;
+}
+
+#footer span{
+    color: white;
+font-size: 1.2rem;
+line-height: 50px;
+
+}
+
+input[type="checkbox"]{
+    display: none;
+    
+    }
+
+.slider img{
+    width: 100%;
+    height:350px;
+    display: none;
+}
+
+.slider{
+    margin-top: 20px;
+   
+}
+
+
+.back{
+    position: absolute;
+    top: 50%;
+    left:0;
+    opacity: 0;
+}
+.next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    opacity: 0;
+}
+.page{
+    transform: translateY(35px);
+}
+
+.color-page{
+    color: red;
+    background-color:red;
+}
+
+/* phần blog slide */
+.blog{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.blog_left{
+    border: 1px solid #e5e5e5;
+    width: calc(28% - 13px);
+    height: 1000px;
+}
+.blog_right{
+    border: 1px solid #e5e5e5;
+    width: calc(72% - 13px);
+
+}
+.date_up{
+float: right;
+padding: 13px 16px;
+
+}
+.clear{
+    margin: 0px 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.date_up span{
+    font-size: 1.4rem;
+    color: #777;
+}
+
+.blog_right h1{
+    margin: 0px 12px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size:2.2rem;
+}
+.blog_right h3{
+    margin: 0px 12px;
+    margin-top: 15px;
+    font-size:1.7rem;
+    color: #4a4a4a;
+}
+
+.container_video{
+   margin-top: 10px;
+}
+
+.blog_right>p{
+    font-size: 1.6rem;
+    line-height: 25px;
+margin: 0 10px;
+word-spacing: 3px;
+margin-top: 15px;
+
+}
+.blog_right>img{
+    width: 100%;
+    margin-top: 40px;
+   
+}
+
+.blog_left h4{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin: 10px 12px;
+    color: #4a4a4a;
+}
+.blog_left ul{
+    list-style: none;
+}
+.blog_left ul li{
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 12px;
+}
+
+.blog_left ul>li>a{
+    text-decoration: none;
+    color: #b55552;
+    text-transform:capitalize;
+    line-height: 35px;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.icon_page{
+    font-size: 10px;
+    color: #777;
+}
+.icon_page1{
+    font-size:12px;
+    color: #777;
+}
+input,textarea,
+button,select,a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.newupdate_images img{
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.loader{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow:hidden;
+    color: #61dafb;
+
+}
+.loadd1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 39%;
+}
+
+.loader p{
+        color: #61dafb;
+        display:flex;
+        justify-content: center;
+        font-size: 2rem;
+        position: relative;
+        top: 41%;
+        font-weight: bold;
+}
+
+.icon{
+    font-size:66px;
+    color: #61dafb;
+}
+.xoay{
+animation: xoay 1.5s linear infinite;
+
+}
+@keyframes xoay{
+from{
+    transform: rotate(0deg);
+}to{
+    transform: rotate(360deg);
+}
+
+}

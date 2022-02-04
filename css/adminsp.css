@@ -1,0 +1,528 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+  }
+  .main {
+    background-image: url('https://truongquochoc.com/wp-content/uploads/2020/10/top-25-hinh-nen-game-cf-dot-kich-dep-full-hd-8.jpg');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+   
+  }
+  .form {
+    width: 360px;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #2dd2d8;
+    border-radius: 2px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+  }
+  .form .heading {
+    font-size: 2rem;
+  }
+  .form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+  }
+  
+  .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+  }
+  
+  .form-label,
+  .form-message {
+    text-align:left;
+
+  }
+  .form-message{
+    color: red;
+  }
+  .form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+  }
+  
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+  }
+  
+  .form-control:hover {
+    border-color: #1dbfaf;
+  }
+  
+  .form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+  }
+  
+  .form-submit {
+    outline: none;
+    background-color: #e73d12;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .form-submit:hover {
+    background-color: #1ac7b6;
+  }
+  
+  .spacer {
+    margin-top: 36px;
+  }
+  .heading{
+      font-weight: 500;
+
+  }
+/* code trang admin */
+
+.head{
+display: flex;
+justify-content: space-between;
+}
+.left_admin{
+  width: 25%;
+  height:100vh;
+  background-color: #333333;
+
+}
+.right_admin{
+  width: 75%;
+  height:100vh;
+
+}
+.head1{
+  background-color: #ed5444;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+  padding:  0 8px;
+}
+.logout{
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  background-color: white;
+  padding: 6px 8px;
+  border-radius:5px;
+
+}
+
+.box_admin{
+
+  margin: 12px 12px;
+  border-radius: 3px;
+  height: 82vh;
+  overflow-y: scroll;
+  position: relative;
+
+}
+
+.hed_title{
+  height: 30px;
+  background-color: #347ab6;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  text-transform:uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 10px 0;
+
+}
+
+table td,table th{
+  padding: 5px 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1.4rem;
+  word-break: break-word;
+}
+table th{
+  background-color:orangered;
+  color: white;
+  height:40px;
+}
+.sua_active{
+  background-color: #1dbfaf;
+  padding: 6px 9px;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+
+.xoa_active{
+  background-color: #e2322c;
+  padding: 6px 9px;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+.td_img img{
+  width: 100px;
+
+}
+.td_id{
+  width: 40px;
+}
+.td_name{
+width: 120px;
+}
+.td_mota{
+  width: 350px;
+
+
+}
+
+.td_hien{
+width: 80px;
+}
+.td_theloai{
+width: 100px;
+}
+
+.td_quanly{
+width: 150px;
+}
+.adminn{
+  display: flex;
+  align-items: center;
+  margin: 20px 20px;
+}
+.adminn img{
+width:60px;
+border-radius: 50%;
+}
+.admin_welcome{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: white;
+    line-height: 25px;
+    margin-left: 20px;
+}
+.admin_name{
+  font-size: 1.2rem;
+color: #ff4500;
+}
+
+.add_sp{
+  background-color: #1ac7b6;
+  text-decoration: none;
+color:white;
+padding: 10px 10px;
+font-size: 1.3rem;
+text-transform: capitalize;
+border: none;
+cursor: pointer;
+margin: 0 20px;
+width: -webkit-fill-available;
+text-align: left;
+margin-bottom: 5px;
+}
+
+.add_au{
+  background-color: red;
+  text-decoration: none;
+color:white;
+padding: 10px 10px;
+font-size: 1.3rem;
+text-transform: capitalize;
+border: none;
+cursor: pointer;
+margin: 0 20px;
+width: -webkit-fill-available;
+text-align: left;
+margin-bottom: 5px;
+}
+
+.add_sl{
+  background-color: orangered;
+  text-decoration: none;
+color:white;
+padding: 10px 10px;
+font-size: 1.3rem;
+text-transform: capitalize;
+border: none;
+cursor: pointer;
+margin: 0 20px;
+width: -webkit-fill-available;
+text-align: left;
+
+}
+#modal{
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+  justify-content:center;
+  align-items: center;
+
+}
+
+.modal_container{
+  background-color:white;
+  width: 500px;
+  min-height: 400px;
+  animation: slidein ease .9s;
+}
+.model_hed{
+  width: 100%;
+  height:45px;
+  background-color: #ed5444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.model_hed h5{
+  font-size: 2rem;
+  text-transform:uppercase;
+color: white;
+font-weight: 300;
+}
+
+input{
+  width: 100%;
+  padding: 8px;
+  outline: none;
+
+}
+
+.label1{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: red;
+}
+form{
+  padding: 10px 15px;
+}
+select{
+  width: 50%;
+  padding: 8px;
+  outline: none;
+}
+input[name="themsanphamm"]{
+  background-color:#1ac7b6;
+  outline:none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+margin-top:10px;
+}
+
+input[name="hinhanh"]{
+  width: 60%;
+}
+
+
+.xquit{
+  color: white;
+  transform: translateX(146px);
+  font-size: 1.4rem;
+  cursor: pointer;
+ background-color: #1ac7b6;
+ padding: 10px 12px;
+
+}
+
+#modal.open{
+  display: flex;
+}
+.head2{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+#modal2{
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+  justify-content:center;
+  align-items: center;
+
+}
+
+
+.modal2_container{
+  background-color:white;
+  width: 500px;
+  min-height: 300px;
+  animation: slidein .9s ease;
+
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(-255px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.modal_tit{
+  width: 100%;
+  height:45px;
+  background-color: #ed5444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal_tit h5{
+  font-size: 2rem;
+  text-transform:uppercase;
+color: white;
+font-weight: 300;
+}
+#modal2.open{
+  display: flex;
+
+}
+.xquitt{
+  color: white;
+  transform: translateX(166px);
+  font-size: 1.4rem;
+  cursor: pointer;
+ background-color: #1ac7b6;
+ padding: 10px 12px;
+}
+.add_sppp1{
+  background-color:#1ac7b6;
+  outline:none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+input[name="audio"]{
+  width: 60%;
+}
+.textareaa{
+  outline: none;
+  padding: 0 10px;
+  resize: none;
+}
+
+#modal3{
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+  justify-content:center;
+  align-items: center;
+
+}
+#modal3.open{
+  display: flex;
+}
+.modal3_container{
+  background-color:white;
+  width: 500px;
+  min-height: 400px;
+  animation: slidein .9s ease;
+}
+.modal3_tit{
+  width: 100%;
+  height:45px;
+  background-color: #ed5444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal3_tit h5{
+  font-size: 2rem;
+  text-transform:uppercase;
+color: white;
+font-weight: 300;
+}
+.xquittt{
+  color: white;
+  transform: translateX(166px);
+  font-size: 1.4rem;
+  cursor: pointer;
+ background-color: #1ac7b6;
+ padding: 10px 12px;
+}
+.add_sppp2{
+  background-color:#1ac7b6;
+  outline:none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+input[name="anhslider"]{
+  width: 60%;
+}
+input[name="videoslider"]{
+  width: 60%;
+}

@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{THE_REQUEST} index\.php
+RewriteRule ^index\.php$ https://www.radiotruyen.cf/ [R=301,L]
+RewriteRule "^([a-zA-Z0-9_-]+)/([0-9]+).html$" "?quanly=blog&bname=$1&slider=$2"
+RewriteRule "^([a-zA-Z0-9_-]+)-([0-9]+).html$" "index.php?quanly=danhmuc&id=$2&ten=$1"
+RewriteRule "^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$" "index.php?quanly=chitietsp&tl=$1&id=$3&sp=$2"
+RewriteRule "^search$" "index.php?quanly=search"
+RewriteRule "^([a-zA-Z0-9_-]+)/([0-9]+)/page=([0-9]+)$" "?quanly=danhmuc&tl=$1&id=$2&trang=$3"
